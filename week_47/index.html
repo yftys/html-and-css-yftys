@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parmís Café</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="home">
+    <nav class="nav">
+      <div class="logo">Parmís Café</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" style="background-image: url('images/coffee-hero.jpg'); background-size: cover; background-position: center; height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center;">
+      <h1>Welcome to Parmís Café!</h1>
+      <p>Enjoy freshly brewed coffee, delicious cakes, and a cozy atmosphere.</p>
+      <a href="#contact" class="btn">Get a Table</a>
+    </section>
+  </header>
+
+  <main>
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <article class="card">
+          <h3>☕ Coffee Specialties</h3>
+          <p>Taste our unique coffee blends made from premium beans.</p>
+        </article>
+        <article class="card">
+          <h3>🍰 Delicious Cakes</h3>
+          <p>Freshly baked cakes and pastries to satisfy your sweet cravings.</p>
+        </article>
+        <article class="card">
+          <h3>🥤 Refreshing Drinks</h3>
+          <p>Try our special teas, smoothies, and cold beverages.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label>
+          Name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4"></textarea>
+        </label>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 Parmís Café. All rights reserved.</small>
+  </footer>
+
+</body>
+</html>
 
