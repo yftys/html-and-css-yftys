@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+nav {
+    background-color: #4A90E2;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #E6F0FA;
+    text-align: center;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #1F3A93;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 250px;
+}
+
+.hero-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1F3A93;
+    text-align: center;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#skills ul li {
+    background-color: #4A90E2;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #E6F0FA;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+    color: #1F3A93;
+}
+
+.project-card p {
+    margin-bottom: 10px;
+}
+
+.project-card a {
+    color: #4A90E2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+#contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+#contact ul li a {
+    background-color: #4A90E2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact ul li a:hover {
+    background-color: #1F3A93;
+}
+
+@media (min-width: 768px) {
+    .project-list {
+        flex-direction: row;
+    }
+    .project-card {
+        flex: 1;
+    }
+}
+nav ul li a {
+    transition: color 0.3s ease;
+}
+
+#contact ul li a {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#skills ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#skills ul li img {
+    width: 24px;
+    height: 24px;
+}
+#skills ul li {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+#skills ul li:hover {
+    background-color: #f2f6ff;
+    transform: translateX(4px);
+}
+#skills h2 {
+    border-bottom: 2px solid #4A90E2;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+.hero-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.project-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.button {
+    background-color: #1F3A93; 
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #4A90E2; 
+}
